@@ -20,7 +20,7 @@ consumer.conversation = consumer.subscriptions.create("ConversationChannel", {
         var messages_visible = (conversation).find('.panel-body').is(':visible');
 
         if (!messages_visible) {
-          conversation.removeClass('panel-default').addClass('panel-success');
+          conversation.removeClass('panel-default').addClass('panel-warning');
         }
         conversation.find('.messages-list').find('ul').append(data['message']);
       }
